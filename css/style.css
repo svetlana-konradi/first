@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Open-Sans;
+    src: url("../fonts/opensans-regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-family: Open-Sans;
+}
+
+.header {
+    width: 100vw;
+    background-image: url("../img/football-801047.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.header-logo {
+    fill: #ffffff;
+}
+
+@media (max-width:640px) {
+    .container {
+        width: 87.5%;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    .header-logo {
+        width: 41.5%;
+    }
+}
+
+@media (min-width:641px) and (max-width:960px) {
+    .container {
+        width: 91%;
+    }
+
+    .header-logo {
+        width: 26.7%;
+    }
+}
+
+@media (min-width:961px) {
+    .container {
+        width: 80%;
+    }
+    .header-logo {
+        width: 10%;
+    }
+}
