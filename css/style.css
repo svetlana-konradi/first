@@ -5,15 +5,25 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: Open-Sans;
+    src: url("../fonts/opensans-bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
 html {
     font-family: Open-Sans;
+    font-size: 10px;
+    margin: 0;
 }
 
 .header {
     width: 100vw;
-    background-image: url("../img/football-801047.jpg");
+    background-image: url("../img/football_1920.jpg");
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
@@ -28,31 +38,156 @@ html {
     right: 0;
 }
 
+.container {
+    z-index: 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .logo {
     text-decoration: none;
 }
 
-.header-logo {
-    fill: #ffffff;
+.profile-first, .profile-second {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-@media (max-width:640px) {
+.social-app-store, .social-google-play {
+    background-color: #5e42b0;
+    padding: 0;
+    border: 0;
+    border-radius: 20vw;
+    padding: 2% 25%;
+    margin-bottom: 5%;
+}
+
+.socials {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.socials-strong {
+    font-weight: 700;
+}
+
+.content {
+    margin: auto;
+}
+
+.content-title {
+    color: #e7e7e7;
+    text-transform: uppercase;
+}
+
+.sport-title {
+    text-transform: uppercase;
+}
+
+.order-number, .order-number-three {
+    position: relative;
+    display: inline-flex;
+}
+
+.order-number::after,  {
+    content: "";
+    position: absolute;
+    background-color: #5e42b0;
+    height: 0.2em;
+    width: 1.3em;
+    top: 1.1em;
+}
+
+.order-number-three::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 0.2em;
+    width: 1.3em;
+    top: 1.1em;
+}
+
+.number {
+    font-weight: 700;
+}
+
+.sport-title {
+    color: #c1c1c1;
+    margin: 0;
+}
+
+.collaboration {
+    background-color: #f5f4f9;
+}
+
+.growth {
+    background-color: #5e42b0;
+}
+
+@media (max-width: 640px) {
     .container {
         width: 87.5%;
     }
 
     .logo {
-        align-items: center;
+        position: center;
     }
 
     .header-logo {
         width: 41.5%;
     }
+
+    .profile-first, .profile-second {
+        width: 100%;
+        font-size: 2.8em;
+      }
+
+    .social-app-store, .social-google-play {
+        width: 100%;
+    }
+
+    .button-logo {
+        width: 7%  
+    }
+    
+    .content {
+        width: 87.5vw; 
+    }
+
+    .content-title {
+        font-size: 5em;
+    }
+
+    .sport-title {
+        font-size: 2.8em;
+    }
+
+    .athlet-picture {
+        width: 62%;
+        margin: auto;
+    }
+
+    .order-number, .order-number-three {
+        font-size: 1.4em;
+    }
+
+    .connection-content, .collaboration-content, .growth-content {
+        font-size: 1.5em;
+    }
+
+    .growth-content {
+        color: #ffffff;
+    }
 }
 
-@media (min-width:641px) and (max-width:960px) {
+
+
+@media (min-width: 641px) and (max-width: 960px) {
     .container {
         width: 91%;
+        display: flex;
     }
 
     .header-logo {
@@ -60,9 +195,10 @@ html {
     }
 }
 
-@media (min-width:961px) {
+@media (min-width: 961px) {
     .container {
         width: 80%;
+        display: flex;
     }
     .header-logo {
         width: 10%;
