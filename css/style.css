@@ -86,12 +86,12 @@ html {
     text-transform: uppercase;
 }
 
-.order-number, .order-number-three {
+.order-number, .order-number-athlets, .order-number-players {
     position: relative;
     display: inline-flex;
 }
 
-.order-number::after,  {
+.order-number::after {
     content: "";
     position: absolute;
     background-color: #5e42b0;
@@ -100,7 +100,7 @@ html {
     top: 1.1em;
 }
 
-.order-number-three::after {
+.order-number-athlets::after {
     content: "";
     position: absolute;
     background-color: #ffffff;
@@ -124,6 +124,41 @@ html {
 
 .growth {
     background-color: #5e42b0;
+}
+
+.growth-players {
+    background-color: #090c35;
+}
+
+.order-number-players {
+    color: #8765dd;
+}
+
+.first-step, .second-step, .third-step {
+    position: relative;
+}
+
+.step-number {
+    background-color: #5e42b0;
+    position: relative;
+}
+
+.step--number {
+    color: #f5f6f7;
+}
+
+.step--number::after {
+    content: "";
+    position: absolute;
+    background-color: #8f7bc8;
+    height: 0.2em;
+    width: 1.3em;
+    top: 2em;
+}
+
+.step-title {
+    color: #f5f6f7;
+    text-transform: uppercase;
 }
 
 @media (max-width: 640px) {
@@ -179,6 +214,29 @@ html {
 
     .growth-content {
         color: #ffffff;
+    }
+
+    .basketballer-picture {
+        width: 100%;
+    }
+
+    .step-number {
+        width: 25%;
+        height: 25%;
+    }
+
+    .be-active-picture, .find-contact-picture, .work-it-picture {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .step-title {
+        font-size: 2.8em;
+    }
+
+    .step-content {
+        font-size: 1.6em;
     }
 }
 
