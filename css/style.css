@@ -143,13 +143,11 @@ html {
 }
 
 .footer-container {
+    position: relative;
     margin: auto;
 }
 
-.logo-button {
-    background-color: #6d4ec9;
-    border-radius: 1em;
-    text-decoration: none;
+.logotype {
     margin: auto;
 }
 
@@ -399,11 +397,25 @@ html {
 
     .footer-container {
         width: 87.5vw;
+        
     }
 
     .logotype {
+        width: 60px;
+        position: relative;
+    }
+
+    .logotype::after {
+        content: "";
+        background-color: #6d4ec9;
         width: 70px;
         height: 70px;
+        border-radius: 1.2em;
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
     }
 
     .download-app {
