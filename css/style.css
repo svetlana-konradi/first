@@ -23,7 +23,7 @@ html {
     background-image: url("../img/football_1920.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     position: relative;
 }
 
@@ -58,16 +58,28 @@ html {
 
 .social-app-store, .social-google-play {
     background-color: #5e42b0;
-    padding: 0;
     border: 0;
     border-radius: 20vw;
-    padding: 2% 25%;
     margin-bottom: 5%;
+    display: flex;
+    font-family: Open-Sans;
+    cursor: pointer;
+}
+
+.social-app-store:hover, .social-google-play:hover {
+    color: #7c5fd0;
+}
+
+.social-app-store:focus, .social-google-play:focus {
+    outline: 0.3em solid #3510a1;
+    border-radius: 20vw;
 }
 
 .socials {
     color: #ffffff;
     text-transform: uppercase;
+    text-align: start;
+    
 }
 
 .socials-strong {
@@ -90,24 +102,6 @@ html {
 .order-number, .order-number-athlets, .order-number-players {
     position: relative;
     display: inline-flex;
-}
-
-.order-number::after {
-    content: "";
-    position: absolute;
-    background-color: #5e42b0;
-    height: 0.2em;
-    width: 1.3em;
-    top: 1.1em;
-}
-
-.order-number-athlets::after {
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    height: 0.2em;
-    width: 1.3em;
-    top: 1.1em;
 }
 
 .number {
@@ -139,34 +133,9 @@ html {
     position: relative;
 }
 
-.step-number {
-    background-color: #5e42b0;
-    position: relative;
-}
-
-.step--number {
-    color: #f5f6f7;
-    position: absolute;
-    top: calc(50% - 35px);
-    left: calc(50% - 35px);
-}
-
-.step--number::after {
-    content: "";
-    position: absolute;
-    background-color: #8f7bc8;
-    height: 0.2em;
-    width: 1.3em;
-    top: 2.5em;
-}
-
 .step-title {
     color: #f5f6f7;
     text-transform: uppercase;
-}
-
-.first-step, .second-step, .third-step {
-
 }
 
 .footer {
@@ -183,8 +152,6 @@ html {
     text-decoration: none;
     margin: auto;
 }
-
-
 
 .download-app {
     color: #ffffff;
@@ -207,52 +174,100 @@ html {
 @media (max-width: 640px) {
     .container {
         width: 87.5%;
-    }
-
-    .logo {
-        position: center;
+        padding-bottom: 28%;
     }
 
     .header-logo {
         width: 41.5%;
+        margin: 10% 29.25% 40%;
     }
 
-    .profile-first, .profile-second {
+    .profile-first {
         width: 100%;
         font-size: 2.8em;
-      }
+        text-align: left;
+        margin-bottom: 5%;
+    }
+
+    .profile-second {
+        width: 84%;
+        font-size: 2.8em;
+        margin-left: 16%;
+        margin-bottom: 25%;
+    }
 
     .social-app-store, .social-google-play {
         width: 100%;
+        font-size: 0.8em;
+        padding: 2% 29%;
+    }
+
+    .socials {
+        padding-left: 0.8em;
     }
 
     .button-logo {
-        width: 7%  
+        width: 25%;  
     }
     
     .content {
-        width: 87.5vw; 
+        width: 100vw; 
     }
 
     .content-title {
         font-size: 5em;
-    }
-
-    .sport-title {
-        font-size: 2.8em;
+        margin-top: 7%;
+        padding-left: 6.25%;
     }
 
     .athlet-picture {
-        width: 62%;
-        margin: auto;
+        width: 54%;
+        /*max-height: 280px;*/
+        margin-left: 5%;
+        margin-bottom: 8%;
     }
 
-    .order-number, .order-number-three {
+    /*.order-number, .order-number-three {
         font-size: 1.4em;
+    }*/
+
+    .sport-title {
+        font-size: 2.3rem;
+        padding-left: 1.5rem;
+    }
+  
+    .number {
+        font-size: 1.4rem;
+        padding-top: 0.3rem;
+    }
+
+    .order-number, .order-number-three, .order-number-athlets, .order-number-players {
+        margin-left: 6.25%;
+        margin-top: 15%;
+    }
+
+    .order-number::after {
+        content: "";
+        position: absolute;
+        background-color: #5e42b0;
+        height: 0.4rem;
+        width: 1.8rem;
+        top: 2.1rem;
+    }
+
+    .order-number-athlets::after, .order-number-players::after {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        height: 0.4rem;
+        width: 1.8rem;
+        top: 2.1rem;
     }
 
     .connection-content, .collaboration-content, .growth-content {
-        font-size: 1.5em;
+        font-size: 1.5rem;
+        padding: 9% 6.25% 18%;
+        margin: 0;
     }
 
     .growth-content {
@@ -261,30 +276,121 @@ html {
 
     .basketballer-picture {
         width: 100%;
+        margin-bottom: 15%;
     }
 
     .first-step, .second-step, .third-step {
-        width: 87.5vw;
-    }
-
-    .step-number {
-        width: 70px;
-        height: 70px;
+        width: 100vw;
     }
 
     .be-active-picture, .find-contact-picture, .work-it-picture {
-        background-size: auto 100%;
-        background-position: center center;
+        box-sizing: border-box;
+        background-size: auto 100vw;
+        background-position: center;
         background-repeat: no-repeat;
         max-width: 100vw;
     }
 
+    .first-number, .second-number, .third-number {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .first-number::before {
+        content: "";
+        position: absolute;
+        background-color: #8f7bc8;
+        height: 0.4em;
+        width: 1.5em;
+        top: -1.8em;
+        left: 4.75em;
+        z-index: 5;
+    }
+
+    .first-number::after {
+        content: "01";
+        width: 70px;
+        height: 70px;
+        background-color: #5e42b0;
+
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;  
+        line-height: 70px;
+        
+        position: absolute;
+        top: -35%;
+        left: 6.25%;
+    }
+
+    .second-number::before {
+        content: "";
+        position: absolute;
+        background-color: #8f7bc8;
+        height: 0.4em;
+        width: 1.5em;
+        top: -1.8em;
+        left: 4.75em;
+        z-index: 5;
+    }
+
+    .second-number::after {
+        content: "02";
+        width: 70px;
+        height: 70px;
+        background-color: #5e42b0;
+
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: bold; 
+        text-align: center;  
+        line-height: 70px;
+
+        position: absolute;
+        top: -35%;
+        left: 6.25%;
+    }
+
+    .third-number::before {
+        content: "";
+        position: absolute;
+        background-color: #8f7bc8;
+        height: 0.4em;
+        width: 1.5em;
+        top: -1.6em;
+        left: 4.75em;
+        z-index: 5;
+    }
+
+    .third-number::after {
+        content: "03";
+        width: 70px;
+        height: 70px;
+        background-color: #5e42b0;
+
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: bold; 
+        text-align: center;  
+        line-height: 70px;
+
+        position: absolute;
+        top: -28%;
+        left: 6.25%;
+    }
+
     .step-title {
         font-size: 2.8em;
+        margin-left: 6.25%;
+        margin-bottom: 0;
     }
 
     .step-content {
-        font-size: 1.6em;
+        font-size: 1.5em;
+        margin-left: 6.25%;
+        margin-bottom: 20%;
     }
 
     .footer {
@@ -295,7 +401,7 @@ html {
         width: 87.5vw;
     }
 
-    .logo-button {
+    .logotype {
         width: 70px;
         height: 70px;
     }
@@ -315,32 +421,59 @@ html {
     }
 }
 
-
-
 @media (min-width: 641px) and (max-width: 960px) {
     .container {
-        width: 91%;
+        width: 91.66%;
         display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 12.5%;
+    }
+
+    .logo {
+        width: 29.2%;
+        margin-top: 5%;
+        margin-bottom: 25%;
     }
 
     .header-logo {
-        width: 26.7%;
-    }
-    .profile-first, .profile-second {
         width: 100%;
-        font-size: 2.8em;
-      }
+    }
+
+    .profile-first {
+        width: 92%;
+        font-size: 6.4em;
+        margin-left: 8%;
+    }
+    
+    .profile-second {
+        width: 77%;
+        font-size: 6.4em;
+        margin-left: 23%;
+        margin-bottom: 43%; 
+    }
 
     .social-app-store, .social-google-play {
-        width: 100%;
+        width: 44.5%;
+        padding: 2% 6%;
+        margin: auto;
     }
 
     .button-logo {
-        width: 7%  
+        width: 6.5em; 
     }
     
+    .socials {
+        font-size: 1.2em;
+        padding-top: 3.5%;
+        padding-left: 0.8em;
+    }
+
+    .socials-strong {
+        font-size: 1em;
+    }
+
     .content {
-        width: 87.5vw; 
+        width: 100vw; 
     }
 
     .content-title {
@@ -373,7 +506,7 @@ html {
     }
 
     .first-step, .second-step, .third-step {
-        width: 87.5vw;
+        width: 100vw;
     }
 
     .step-number {
@@ -394,6 +527,7 @@ html {
 
     .step-content {
         font-size: 1.6em;
+        width: 87.5%
     }
 
     .footer {
@@ -425,25 +559,64 @@ html {
 }
 
 @media (min-width: 961px) {
+    .header {
+        max-height: 960px;
+    }
+    
     .container {
         width: 80%;
         display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 12.5%;
     }
+
+    .logo {
+        width: 12.5%;
+        margin-top: 3%;
+        margin-bottom: 15%;
+    }
+
     .header-logo {
-        width: 10%;
+        width: 100%;
     }
 
-    .profile-first, .profile-second {
-        width: 100%;
-        font-size: 2.8em;
-      }
+    .profile-first {
+        width: 99%;
+        font-size: 9em;
+    }
+    
+    .profile-second {
+        width: 99%;
+        font-size: 9em;
+        text-align: end;
+        margin-bottom: 14%; 
+    }
 
-    .social-app-store, .social-google-play {
-        width: 100%;
+    .social-app-store {
+        width: 20%;
+        padding: 1% 3%;
+        margin-right: 2%;
+        margin-left: auto;
+    }
+
+    .social-google-play {
+        width: 19%;
+        padding: 1% 3%;
+        margin-right: auto;
     }
 
     .button-logo {
-        width: 7%  
+        width: 5em; 
+    }
+    
+    .socials {
+        font-size: 1.4rem;
+        padding-left: 1.5em;
+        padding-top: 2.5%;
+    }
+
+    .socials-strong {
+        font-size: 1em;
     }
     
     .content {
@@ -529,3 +702,15 @@ html {
         margin-left: 26.25%;
         margin-right: 26.25%;
     }
+
+
+
+
+
+
+
+
+
+
+    
+}
