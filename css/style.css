@@ -84,6 +84,8 @@ html {
     color: #ffffff;
     text-transform: uppercase;
     text-align: start; 
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .socials-strong {
