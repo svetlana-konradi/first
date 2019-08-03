@@ -14,7 +14,7 @@
 
 body {
     margin: 0;
-    height: 100vw;
+    width: 100vw;
 }
 
 html {
@@ -541,6 +541,7 @@ html {
         position: absolute;
         top: -2%;
         left: 10%;
+        overflow: hidden;
     }
 
     .number {
