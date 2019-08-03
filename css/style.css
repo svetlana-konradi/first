@@ -184,7 +184,7 @@ html {
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 640px) and (orientation: portrait) {
     .container {
         width: 87.5%;
         padding-bottom: 28%;
@@ -246,10 +246,6 @@ html {
         margin-left: 5%;
         margin-bottom: 8%;
     }
-
-    /*.order-number, .order-number-three {
-        font-size: 1.4em;
-    }*/
 
     .sport-title {
         font-size: 2.3rem;
@@ -454,7 +450,7 @@ html {
     }
 }
 
-@media (min-width: 641px) and (max-width: 960px) {
+@media (max-width: 640px) and (orientation: landscape), (min-width: 641px) and (max-width: 960px) {
     .container {
         width: 91.66%;
         display: flex;
