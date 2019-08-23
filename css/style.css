@@ -84,12 +84,14 @@ html {
     color: #ffffff;
     text-transform: uppercase;
     text-align: start; 
+    font-size: 10%;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 .socials-strong {
     font-weight: 700;
+    font-size: 10%;
 }
 
 .content {
