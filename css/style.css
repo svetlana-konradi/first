@@ -20,7 +20,6 @@ body {
 html {
     font-family: Open-Sans;
     font-size: 10px;
-    margin: 0;
 }
 
 .header {
@@ -84,14 +83,13 @@ html {
     color: #ffffff;
     text-transform: uppercase;
     text-align: start; 
-    font-size: 10%;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 .socials-strong {
     font-weight: 700;
-    font-size: 10%;
+    font-size: inherit;
 }
 
 .content {
@@ -136,6 +134,7 @@ html {
 .order-number-players {
     color: #8765dd;
 }
+
 
 .first-step, .second-step, .third-step {
     position: relative;
@@ -186,10 +185,10 @@ html {
 }
 
 
-@media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 640px) {
     .container {
         width: 87.5%;
-        padding-bottom: 28%;
+        padding-bottom: 2%;
     }
 
     .header-logo {
@@ -199,14 +198,14 @@ html {
 
     .profile-first {
         width: 100%;
-        font-size: 2.8em;
+        font-size: 8.75vw;
         text-align: left;
         margin-bottom: 5%;
     }
 
     .profile-second {
         width: 84%;
-        font-size: 2.8em;
+        font-size: 8.75vw;
         margin-left: 16%;
     }
 
@@ -214,18 +213,19 @@ html {
         margin-top: 25%;
         width: 100%;
         font-size: 0.8em;
-        padding: 2% 29%;
+        padding: 1% 29%;
     }
 
     .social-google-play {
         width: 100%;
         font-size: 0.8em;
-        padding: 2% 29%;
+        padding: 1% 29%;
         margin-bottom: 28%;
     }
 
     .socials {
-        padding-left: 0.8em;
+        padding-left: 3vw;
+        font-size: 2.5vw;
     }
 
     .button-logo {
@@ -233,25 +233,26 @@ html {
     }
     
     .content {
-        width: 100vw; 
+        width: 100%; 
     }
 
     .content-title {
-        font-size: 5em;
-        margin-top: 7%;
+        font-size: 15.625vw;
+        margin-top: 2%;
+        margin-bottom: 2%;
         padding-left: 6.25%;
     }
 
     .athlet-picture {
-        width: 54%;
-        /*max-height: 280px;*/
-        margin-left: 5%;
-        margin-bottom: 8%;
+        width: 50%;
+        margin-left: 6%;
+        margin-right: 10%;
     }
 
     .sport-title {
-        font-size: 2.3rem;
+        font-size: 7.2vw;
         padding-left: 1.5rem;
+        float: left;
     }
   
     .number {
@@ -261,7 +262,7 @@ html {
 
     .order-number, .order-number-three, .order-number-athlets, .order-number-players {
         margin-left: 6.25%;
-        margin-top: 15%;
+        margin-top: 14%;
     }
 
     .order-number::after {
@@ -283,8 +284,8 @@ html {
     }
 
     .connection-content, .collaboration-content, .growth-content {
-        font-size: 1.5rem;
-        padding: 9% 6.25% 18%;
+        font-size: 4.687vw;
+        padding: 6% 11% 16%;
         margin: 0;
     }
 
@@ -294,19 +295,17 @@ html {
 
     .basketballer-picture {
         width: 100%;
-        margin-bottom: 15%;
     }
 
     .first-step, .second-step, .third-step {
         width: 100vw;
+        overflow: hidden;
     }
 
     .be-active-picture, .find-contact-picture, .work-it-picture {
         box-sizing: border-box;
-        background-size: auto 100vw;
-        background-position: center;
-        background-repeat: no-repeat;
-        max-width: 100vw;
+        max-width: 140vw;
+        margin-left: -6%;
     }
 
     .first-number, .second-number, .third-number {
@@ -315,100 +314,34 @@ html {
         position: relative;
     }
 
-    .first-number::before {
-        content: "";
-        position: absolute;
-        background-color: #8f7bc8;
-        height: 0.4em;
-        width: 1.5em;
-        top: -1.8em;
-        left: 4.75em;
-        z-index: 5;
-    }
-
-    .first-number::after {
-        content: "01";
+    .step1, .step2, .step3 {
         width: 70px;
         height: 70px;
         background-color: #5e42b0;
-
-        font-size: 14px;
-        color: #ffffff;
-        font-weight: bold;
-        text-align: center;  
-        line-height: 70px;
-        
         position: absolute;
-        top: -35%;
-        left: 6.25%;
+        left: 9%;
+        top: -6rem;
     }
-
-    .second-number::before {
-        content: "";
-        position: absolute;
-        background-color: #8f7bc8;
-        height: 0.4em;
-        width: 1.5em;
-        top: -1.8em;
-        left: 4.75em;
-        z-index: 5;
-    }
-
-    .second-number::after {
-        content: "02";
-        width: 70px;
-        height: 70px;
-        background-color: #5e42b0;
-
+ 
+    .step-number {
+        width: 15px;
         font-size: 14px;
         color: #ffffff;
         font-weight: bold; 
-        text-align: center;  
-        line-height: 70px;
-
-        position: absolute;
-        top: -35%;
-        left: 6.25%;
-    }
-
-    .third-number::before {
-        content: "";
-        position: absolute;
-        background-color: #8f7bc8;
-        height: 0.4em;
-        width: 1.5em;
-        top: -1.6em;
-        left: 4.75em;
-        z-index: 5;
-    }
-
-    .third-number::after {
-        content: "03";
-        width: 70px;
-        height: 70px;
-        background-color: #5e42b0;
-
-        font-size: 14px;
-        color: #ffffff;
-        font-weight: bold; 
-        text-align: center;  
-        line-height: 70px;
-
-        position: absolute;
-        top: -28%;
-        left: 6.25%;
+        text-align: center; 
+        border-bottom: 4px solid #8f7bc8;
+        margin: 33.3% auto
     }
 
     .step-title {
-        font-size: 2.8em;
-        margin-left: 6.25%;
+        font-size: 8.75vw;
+        margin-left: 9%;
         margin-bottom: 0;
     }
 
     .step-content {
-        font-size: 1.5em;
-        margin-left: 6.25%;
-        margin-bottom: 20%;
+        font-size: 4.687vw;
+        margin: 7% 15% 20% 9%;
     }
 
     .footer {
@@ -436,13 +369,13 @@ html {
     }
 
     .download-app {
-        font-size: 3.2rem;
+        font-size: 10vw;
         margin-top: 5rem;
         text-align: center;
     }
     
     .slogan {
-        font-size: 1.4rem;
+        font-size: 4.375vw;
         text-align: center;
     }
     
@@ -452,12 +385,12 @@ html {
     }
 }
 
-@media (max-width: 640px) and (orientation: landscape), (min-width: 641px) and (max-width: 960px) {
+@media (min-width: 641px) and (max-width: 960px) {
     .container {
         width: 91.66%;
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 12.5%;
+        padding-bottom: 5.5%;
     }
 
     .logo {
@@ -472,13 +405,13 @@ html {
 
     .profile-first {
         width: 92%;
-        font-size: 6.4em;
+        font-size: 8.25vw;
         margin-left: 8%;
     }
     
     .profile-second {
         width: 77%;
-        font-size: 6.4em;
+        font-size: 8.25vw;
         margin-left: 23%;
     }
 
@@ -489,13 +422,12 @@ html {
     }
 
     .button-logo {
-        width: 6.5em; 
+        width: 6vw; 
     }
     
     .socials {
-        font-size: 1.2em;
-        padding-top: 3.5%;
-        padding-left: 0.8em;
+        font-size: 2.0833vw;
+        padding-left: 2.5vw;
     }
 
     .socials-strong {
@@ -504,6 +436,7 @@ html {
 
     .content {
         width: 100vw; 
+        overflow: hidden;
     }
 
     .sport1, .sport2 {
@@ -512,13 +445,13 @@ html {
     }
 
     .sport1 .content-title {
-        font-size: 8em;
-        margin: 8% 4% 0 38.4%;
+        font-size: 10.42vw;
+        margin: 8% 4% 0 50%;
     }
 
     .sport2 .content-title {
-        margin: 8% 38.4% 0 4%;
-        font-size: 8em;
+        margin: 8% 50% 0 4%;
+        font-size: 10.42vw;
     }
 
     .athlet-picture {
@@ -529,21 +462,19 @@ html {
     }
 
     .sport1 .order-number, .order-number-athlets {
-        margin-left: 38.4%;
+        margin-left: 50%;
         margin-top: 4%;
     }
 
     .sport2 .order-number, .order-number-players {
-        margin: 4% 38.4% 0 4%;
+        margin: 4% 50% 0 4%;
     }
 
     .basketballer-picture {
-        width: 100%;
-        height: 100%;
+        width: 98%;
         position: absolute;
-        top: -2%;
-        left: 10%;
-        overflow: hidden;
+        top: -4%;
+        left: 10.5%;
     }
 
     .number {
@@ -552,7 +483,7 @@ html {
     }
 
     .sport-title {
-        font-size: 3.2rem;
+        font-size: 4.175vw;
         padding-left: 4%;
     }
 
@@ -575,18 +506,18 @@ html {
     }
 
     .connection-content, .collaboration-content, .growth-content {
-        font-size: 1.5rem;
+        font-size: 2vw;
         padding-top: 4%;
         padding-bottom: 4%;
-        margin: 0 5% 0 38.4%;
+        margin: 0 5% 0 50%;
         line-height: 1.7;
     }
 
     .sport2 .connection-content, .sport2 .collaboration-content, .sport2 .growth-content {
-        font-size: 1.5rem;
+        font-size: 2vw;
         padding-top: 4%;
         padding-bottom: 4%;
-        margin: 0 38.4% 0 5%;
+        margin: 0 50% 0 5%;
         line-height: 1.7;
     }
 
@@ -600,10 +531,7 @@ html {
 
     .be-active-picture, .find-contact-picture, .work-it-picture {
         box-sizing: border-box;
-        background-size: auto 100vw;
-        background-position: center;
-        background-repeat: no-repeat;
-        max-width: 100vw;
+        min-width: 100vw;
     }
 
     .first-number, .second-number, .third-number {
@@ -612,108 +540,44 @@ html {
         position: relative;
     }
 
-    .first-number::before {
-        content: "";
-        position: absolute;
-        background-color: #8f7bc8;
-        height: 0.4em;
-        width: 2.5em;
-        top: -1.2em;
-        left: 7.8em;
-        z-index: 5;
-    }
-
-    .first-number::after {
-        content: "01";
+    .step1, .step2, .step3 {
         width: 120px;
         height: 120px;
         background-color: #5e42b0;
-
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: bold;
-        text-align: center;  
-        line-height: 110px;
-        
         position: absolute;
-        top: -24%;
-        left: 4%;
+        left: 6%;
+        top: -8.5rem;
     }
-
-    .second-number::before {
-        content: "";
-        position: absolute;
-        background-color: #8f7bc8;
-        height: 0.4em;
-        width: 2.5em;
-        top: -1.2em;
-        left: 7.8em;
-        z-index: 5;
-    }
-
-    .second-number::after {
-        content: "02";
-        width: 120px;
-        height: 120px;
-        background-color: #5e42b0;
-
+ 
+    .step-number {
+        width: 25px;
         font-size: 24px;
         color: #ffffff;
         font-weight: bold; 
-        text-align: center;  
-        line-height: 110px;
-
-        position: absolute;
-        top: -26%;
-        left: 4%;
-    }
-
-    .third-number::before {
-        content: "";
-        position: absolute;
-        background-color: #8f7bc8;
-        height: 0.4em;
-        width: 2.5em;
-        top: -1em;
-        left: 7.8em;
-        z-index: 5;
-    }
-
-    .third-number::after {
-        content: "03";
-        width: 120px;
-        height: 120px;
-        background-color: #5e42b0;
-
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: bold; 
-        text-align: center;  
-        line-height: 110px;
-
-        position: absolute;
-        top: -23%;
-        left: 4%;
+        text-align: center; 
+        border-bottom: 4px solid #8f7bc8;
+        margin: 33.3% auto
     }
 
     .step-title {
-        font-size: 8em;
-        margin-left: 4%;
-        margin-bottom: 0;
+        font-size: 10.416vw;
+        margin: 8% 6% 1%;
     }
 
     .step-content {
-        font-size: 2.4em;
-        margin-left: 4%;
-        margin-bottom: 13%;
+        font-size: 3.125vw;
+        margin: 0 6% 13%;
     }
 
     .footer {
         background-image: url("../img/game_1280.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .footer-container {
-        width: 87.5vw;
+        width: 91.66vw;  
         display: flex;
         flex-wrap: wrap;
     }
@@ -722,7 +586,7 @@ html {
         background-color: #6d4ec9;
         width: 130px;
         height: 130px;
-        border-radius: 1.2em;
+        border-radius: 2.5em;
         position: relative;
         margin-top: 19%;
     }
@@ -735,13 +599,14 @@ html {
     }
 
     .download-app {
-        font-size: 8rem;
+        font-size: 10.4vw;
         margin-top: 8rem;
         text-align: center;
+        width: 91.66vw;
     }
     
     .slogan {
-        font-size: 3.6rem;
+        font-size: 4.68vw;
         text-align: center;
     }
     
@@ -770,43 +635,43 @@ html {
 
     .profile-first {
         width: 99%;
-        font-size: 9em;
+        font-size: 4.68vw;
     }
     
     .profile-second {
         width: 99%;
-        font-size: 9em;
+        font-size: 4.68vw;
         text-align: end;
     }
 
     .social-app-store {
-        width: 20%;
+        width: 16vw;
         padding: 1% 3%;
         margin: 14% 2% 6% auto;
     }
 
     .social-google-play {
-        width: 19%;
+        width: 16vw;
         padding: 1% 3%;
         margin: 14% auto 6% 0;
     }
 
     .button-logo {
-        width: 5em; 
+        width: 2.5vw; 
     }
     
     .socials {
-        font-size: 1.4rem;
-        padding-left: 1.5em;
-        padding-top: 2.5%;
+        font-size: 0.73vw;
+        padding-left: 1.1vw;
     }
 
     .socials-strong {
-        font-size: 1em;
+        font-size: inherit;
     }
     
     .content {
         width: 100vw; 
+        overflow: hidden;
     }
 
     .sport1, .sport2 {
@@ -815,19 +680,19 @@ html {
     }
 
     .sport1 .content-title {
-        font-size: 8em;
+        font-size: 4.69vw;
         margin: 5.9% 10% 0 52.7%;
     }
 
     .sport2 .content-title {
         margin: 5.9% 52.7% 0 10%;
-        font-size: 8em;
+        font-size: 4.69vw;
     }
 
     .athlet-picture {
-        height: 101%;
+        height: 54vw;
         position: absolute;
-        top: 0.5rem;
+        top: -1rem;
         right: 50%;
     }
 
@@ -840,7 +705,7 @@ html {
     }
 
     .basketballer-picture {
-        height: 101%;
+        height: 43vw;
         position: absolute;
         top: -2.5%;
         left: 40%;
@@ -852,7 +717,7 @@ html {
     }
 
     .sport-title {
-        font-size: 3.6rem;
+        font-size: 1.875vw;
         padding-left: 10%;
     }
 
@@ -875,7 +740,7 @@ html {
     }
 
     .sport1 .connection-content, .sport1 .collaboration-content, .sport1 .growth-content {
-        font-size: 2rem;
+        font-size: 1.04vw;
         padding-top: 1em;
         padding-bottom: 2.5em;
         margin: 0 10% 0 52.7%;
@@ -883,7 +748,7 @@ html {
     }
 
     .sport2 .connection-content, .sport2 .collaboration-content, .sport2 .growth-content {
-        font-size: 2rem;
+        font-size: 1.04vw;
         padding-top: 1em;
         padding-bottom: 2.5em;
         margin: 0 52.7% 0 10%;
@@ -907,10 +772,8 @@ html {
 
     .be-active-picture, .find-contact-picture, .work-it-picture {
         box-sizing: border-box;
-        background-size: 50% auto;
-        background-position: center;
-        background-repeat: no-repeat;
         min-width: 50vw;
+        max-width: 50vw;
     }
 
     .first-number, .second-number, .third-number {
@@ -920,102 +783,52 @@ html {
         position: relative;
     }
 
-    .first-number::before {
-        content: "";
-        position: absolute;
-        background-color: #8f7bc8;
-        height: 0.4em;
-        width: 2.5em;
-        top: 20em;
-        left: -1.4em;
-        z-index: 5;
-    }
-
-    .first-number::after {
-        content: "01";
-        width: 170px;
-        height: 170px;
+    .step1, .step3 {
+        box-sizing: border-box;
+        width: 8.855vw;
+        height: 8.855vw;
         background-color: #5e42b0;
-
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: bold;
-        text-align: center;  
-        line-height: 160px;
-        
         position: absolute;
-        top: 14%;
         left: -9%;
+        top: 10rem;
     }
 
-    .second-number::before {
-        content: "";
-        position: absolute;
-        background-color: #8f7bc8;
-        height: 0.4em;
-        width: 2.5em;
-        top: 20em;
-        left: 94.7em;
-        z-index: 5;
-    }
-
-    .second-number::after {
-        content: "02";
-        width: 170px;
-        height: 170px;
+    .step2 {
+        box-sizing: border-box;
+        width: 8.855vw;
+        height: 8.855vw;
         background-color: #5e42b0;
-
-        font-size: 24px;
+        position: absolute;
+        right: -9%;
+        top: 10rem;
+    }
+ 
+    .step-number {
+        width: 1.31vw;
+        font-size: 1.3vw;
         color: #ffffff;
         font-weight: bold; 
-        text-align: center;  
-        line-height: 160px;
-
+        text-align: center; 
+        border-bottom: 4px solid #8f7bc8;
         position: absolute;
-        top: 14%;
-        left: 91%;
-    }
-
-    .third-number::before {
-        content: "";
-        position: absolute;
-        background-color: #8f7bc8;
-        height: 0.4em;
-        width: 2.5em;
-        top: 20em;
-        left: -1.4em;
-        z-index: 5;
-    }
-
-    .third-number::after {
-        content: "03";
-        width: 170px;
-        height: 170px;
-        background-color: #5e42b0;
-
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: bold; 
-        text-align: center;  
-        line-height: 160px;
-
-        position: absolute;
-        top: 14%;
-        left: -9%;
+        top: calc(47% - 0.65vw);
+        left: calc(50% - 0.65vw);
     }
 
     .step-title {
-        font-size: 8em;
-        margin: 13.5% 0 6.25% 13%;
+        font-size: 4.17vw;
+        margin: 13.5% 13% 6.25%;
     }
 
     .step-content {
-        font-size: 2.4em;
+        font-size: 1.25vw;
         margin-left: 13%;
+        padding-right: 10%;
     }
 
     .footer {
         background-image: url("../img/game_1920.jpg");
+        background-size: cover;
     }
 
     .footer-container {
@@ -1028,15 +841,15 @@ html {
 
     .logotype {
         background-color: #6d4ec9;
-        width: 135px;
-        height: 135px;
+        width: 7.688vw;
+        height: 7.688vw;
         border-radius: 1.2em;
         position: relative;
         margin: 1% 1% 0 23%;
     }
 
     .logotype-image {
-        width: 105px;
+        width: 5.98vw;
         position: absolute;
         top: 13%;
         left: 9.5%;
