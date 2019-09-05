@@ -141,7 +141,7 @@ html {
 }
 
 .step-title {
-    color: #f5f6f7;
+    color: #c1c1c1;
     text-transform: uppercase;
 }
 
@@ -641,7 +641,7 @@ html {
     .profile-second {
         width: 99%;
         font-size: 4.68vw;
-        text-align: end;
+        text-align: right;
     }
 
     .social-app-store {
@@ -657,7 +657,8 @@ html {
     }
 
     .button-logo {
-        width: 2.5vw; 
+        width: 2.5vw;
+        height: 2.5vw;
     }
     
     .socials {
@@ -728,6 +729,7 @@ html {
         height: 0.4rem;
         width: 2rem;
         top: 3rem;
+        left: 0;
     }
 
     .order-number-athlets::after, .order-number-players::after {
@@ -737,6 +739,7 @@ html {
         height: 0.4rem;
         width: 2rem;
         top: 3rem;
+        left: 0;
     }
 
     .sport1 .connection-content, .sport1 .collaboration-content, .sport1 .growth-content {
